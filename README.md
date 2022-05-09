@@ -31,8 +31,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Feedback Widget tem como objetivo um usuário anonimo cadastrar um feedback, sendo ele bug, idea ou outros, os códigos realizados neste projeto foi ao final da trilha impulse do evento Next Level Week, realizado pela [Rocketseat](https://www.rocketseat.com.br/).
-O projeto é dividido em, _front-end_, _back-end_ e _mobile_. Cada parte está em um diretório separado, o back-end API foi criada com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID e, sempre que possível, aplicando Design Patterns para resolver alguns problemas comuns. .
+O Feedback Widget tem como objetivo um usuário anonimo cadastrar um feedback, sendo ele bug, idea ou outros, os códigos realizados neste projeto foi codado ao final da trilha impulse do evento Next Level Week, realizado pela [Rocketseat](https://www.rocketseat.com.br/).
+O projeto é dividido em, _front-end_, _back-end_ e _mobile_. Cada parte está em um diretório separado, o back-end API foi criada com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID e, sempre que possível, aplicando Design Patterns para resolver alguns problemas comuns.
 
 
 ## 🔖 Layout
@@ -44,13 +44,12 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 - Clone o repositório
 - Instale as dependências com `npm install`
-- Para iniciar o servidor em modo desenvolvimento deve-se remover a linha nº1 `"import 'module-alias/register'"` no arquivo file
+- Para iniciar o servidor em modo desenvolvimento deve-se remover a linha nº1 `"import 'module-alias/register'"` no arquivo server.ts
 - Inicie o servidor em modo desenvolvedor `npm run dev`
 - Faça a build do projeto `npm run build`
 - Iniciar o projeto `npm run start`
 
-Agora você pode acessar web [`localhost:3000`](http://localhost:3000)
-Agora você pode acessar server [`localhost:3333/api`](http://localhost:3333/api)
+Agora você pode acessar web [`localhost:3000`](http://localhost:3000) e o server [`localhost:3333/api`](http://localhost:3333/api)
 
 
 ## 💜 Agradecimentos
