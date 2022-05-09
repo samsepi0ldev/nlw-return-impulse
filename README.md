@@ -49,7 +49,8 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 - Faça a build do projeto `npm run build`
 - Iniciar o projeto `npm run start`
 
-Agora você pode acessar [`localhost:3333`](http://localhost:3333)
+Agora você pode acessar web [`localhost:3000`](http://localhost:3000)
+Agora você pode acessar server [`localhost:3333/api`](http://localhost:3333/api)
 
 
 ## 💜 Agradecimentos
