@@ -45,6 +45,12 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 Agora você pode acessar [`localhost:3333`](http://localhost:3333)
 
+## Agradecimentos :heart:
+
+- [Rocketseat](https://www.rocketseat.com.br/)
+- [Notion](https://efficient-sloth-d85.notion.site/Impulse-58f2daadb8e1433894420cbc57571087)
+- [Layout](https://www.figma.com/community/file/1102912516166573468)
+
 ---
 
 Feito com ♥ by Elivelton Santos 👋🏻
