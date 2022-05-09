@@ -1,3 +1,5 @@
+import 'module-alias/register'
+
 import { setupApp } from '@/main/config'
 
 const app = setupApp()
