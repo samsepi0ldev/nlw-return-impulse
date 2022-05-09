@@ -21,14 +21,18 @@
 ## ✨ Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- [React](https://reactjs.org)
-- [TypeScript](https://www.typescriptlang.org/)
+- [Web 🌐](./web):
+  - [Vite](https://vitejs.dev/)
+  - [React](https://reactjs.org)
+  - [TypeScript](https://www.typescriptlang.org/)
+- [Server 💻](./server):
+  - [Node.js](https://nodejs.org/en/)
+  - [TypeScript](https://www.typescriptlang.org/)
 
 ## 💻 Projeto
 
 O Feedback Widget tem como objetivo um usuário anonimo cadastrar um feedback, sendo ele bug, idea ou outros, os códigos realizados neste projeto foi ao final da trilha impulse do evento Next Level Week, realizado pela [Rocketseat](https://www.rocketseat.com.br/).
-O projeto é dividido em, _front-end_, _back-end_ e _mobile_. Cada parte está em um diretório separado, e o mesmo foi escrito com CLEAN CODE e SOLID.
+O projeto é dividido em, _front-end_, _back-end_ e _mobile_. Cada parte está em um diretório separado, o back-end API foi criada com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID e, sempre que possível, aplicando Design Patterns para resolver alguns problemas comuns. .
 
 ## 🔖 Layout
 
