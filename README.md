@@ -45,7 +45,6 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 - Clone o repositório
 - Instale as dependências com `npm install`
-- Para iniciar o servidor em modo desenvolvimento deve-se remover a linha nº1 `"import 'module-alias/register'"` no arquivo server.ts
 - Inicie o servidor em modo desenvolvedor `npm run dev`
 - Faça a build do projeto `npm run build`
 - Iniciar o projeto `npm run start`
