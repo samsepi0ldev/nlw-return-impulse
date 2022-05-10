@@ -1,9 +1,8 @@
-import { CloseButton } from '../CloseButton'
+import { useCallback, useState } from 'react'
 
 import bugImageUrl from '../../assets/bug.svg'
 import ideaImageUrl from '../../assets/idea.svg'
 import thoughtImageUrl from '../../assets/thought.svg'
-import { useCallback, useState } from 'react'
 import { FeedbackTypeStep } from './steps/FeedbackTypeStep'
 import { FeedbackContentStep } from './steps/FeedbackContentStep'
 import { FeedbackSuccessStep } from './steps/FeedbackSuccessStep'
@@ -43,7 +42,7 @@ export function WidgetForm () {
   }, [])
 
   return (
-    <div className='relative bg-zinc-900 rounded-2xl p-4 mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2.5rem)] md:w-auto'>
+    <div className='relative bg-zinc-900 dark:bg-white rounded-2xl p-4 mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2.5rem)] md:w-auto'>
       {feedbackSent ? (
         <FeedbackSuccessStep onFeedbackRestartRequested={feedbackRestartOnRequested} />
       ) : (
@@ -60,7 +59,7 @@ export function WidgetForm () {
         </>
       )}
       <footer>
-        <span className='text-xs text-neutral-400'>
+        <span className='text-xs text-zinc-400 dark:text-zinc-500'>
           Feito com ♥ por <a href='#' className='underline underline-offset-2'>Elivelton S.</a>
         </span>
       </footer>
