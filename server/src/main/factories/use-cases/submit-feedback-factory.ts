@@ -1,7 +1,7 @@
 import { DbSubmitFeedback } from '@/data/use-cases'
 import { SubmitFeedback } from '@/domain/use-cases'
 import { FeedbackPrismaRepository } from '@/infra/db'
-import { NodemailerAdapter } from '@/infra/main'
+import { NodemailerAdapter } from '@/infra/mail'
 import { env } from '@/main/config'
 
 export const makeSubmitFeedback = (): SubmitFeedback => {
