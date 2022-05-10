@@ -11,6 +11,7 @@ type User = {
 interface AuthContextProps {
   user: User
   signed: boolean
+  isLoadingAuthentication: boolean
   signIn: (data: any) => void
   signOut: () => void
 }
@@ -19,6 +20,7 @@ const AuthContext = createContext<AuthContextProps>({} as AuthContextProps)
 
 export function AuthProvider ({ children }: React.PropsWithChildren<{}>) {
   const [user, setUser] = useState<User>(null)
+  const [isLoadingAuthentication, setIsLoadingAuthentication] = useState(true)
 
   const authObserver = useCallback((data: any) => {
     if (data) {
@@ -26,9 +28,11 @@ export function AuthProvider ({ children }: React.PropsWithChildren<{}>) {
         name: data.displayName,
         photoURL: data.photoURL
       })
+      setIsLoadingAuthentication(false)
       return
     }
     setUser(null)
+    setIsLoadingAuthentication(false)
   }, [])
 
   useEffect(() => {
@@ -43,11 +47,10 @@ export function AuthProvider ({ children }: React.PropsWithChildren<{}>) {
 
   function signIn (data: User) {
     setUser(data)
-    console.log(data)
   }
 
   return (
-    <AuthContext.Provider value={{ signed: !!user, user, signIn, signOut }}>
+    <AuthContext.Provider value={{ signed: !!user, user, signIn, signOut, isLoadingAuthentication }}>
       {children}
     </AuthContext.Provider>
   )
