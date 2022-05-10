@@ -35,20 +35,20 @@ export function Header () {
   }, [])
 
   return (
-    <header className='bg-zinc-800 w-full h-16 flex items-center justify-between px-40'>
-      <div id='logo' className='w-40 h-10 bg-zinc-700 rounded-md'></div>
-      <div id='links' className='flex items-center gap-6'>
+    <header className='bg-zinc-800 w-full h-16 flex items-center justify-between px-6 md:px-40'>
+      <div id='logo' className='hidden md:block w-40 h-10 bg-zinc-700 rounded-md'></div>
+      <div id='links' className='hidden md:flex items-center gap-6'>
         <span className='w-[99px] h-4 rounded-full bg-zinc-700 block'></span>
         <span className='w-[99px] h-4 rounded-full bg-zinc-700 block'></span>
         <span className='w-[99px] h-4 rounded-full bg-zinc-700 block'></span>
         <span className='w-[99px] h-4 rounded-full bg-zinc-700 block'></span>
       </div>
       <div id='profile' className='flex items-center gap-4'>
+        <button className='w-8 h-8 rounded-md hover:bg-zinc-700 transition-colors flex items-center justify-center'>
+          <Sun weight='bold' />
+        </button>
         {signed ? (
           <>
-            <button className='w-8 h-8 rounded-md hover:bg-zinc-700 transition-colors flex items-center justify-center'>
-              <Sun weight='bold' />
-            </button>
             <button
               onClick={signOut}
               className='w-8 h-8 rounded-md hover:bg-zinc-700 transition-colors flex items-center justify-center'>
