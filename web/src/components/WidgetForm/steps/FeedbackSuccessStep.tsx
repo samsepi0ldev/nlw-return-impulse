@@ -24,7 +24,7 @@ export function FeedbackSuccessStep ({
         <button
           onClick={onFeedbackRestartRequested}
           type='button'
-          className='py-2 px-6 mt-6 bg-zinc-800 rounded-md border-transparent text-sm leading-6 hover:bg-zinc-700 transition-colors'>
+          className='py-2 px-6 mt-6 bg-zinc-800 dark:bg-zinc-100 rounded-md border-transparent text-sm leading-6 hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors'>
           Quero enviar outro
         </button>
       </div>

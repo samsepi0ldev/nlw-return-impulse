@@ -1,5 +1,6 @@
 
 require('tailwind-scrollbar'),module.exports = {
+  darkMode: 'class',
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
