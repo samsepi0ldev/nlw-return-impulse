@@ -1,7 +1,7 @@
 import { Controller, HttpResponse, HttpRequest, Validator } from '@/presentation/protocols'
 import { badRequest, created, serverError } from '@/presentation/helpers'
 import { SubmitFeedback } from '@/domain/use-cases'
-import { InvalidImageError } from '@/presentation/erros'
+import { InvalidImageError } from '@/presentation/errors'
 
 interface FeedbackRequest {
   type: string
@@ -30,7 +30,7 @@ export class SubmitFeedbackController implements Controller {
 
       return created()
     } catch (error) {
-      return serverError(error as Error)
+      return serverError(error)
     }
   }
 }
